@@ -5,3 +5,28 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  /* COLORS */
+  /* Brand */
+  --snitp-sun: hsla(47, 100%, 56%, 1);
+  --snitap-sky-mid: hsla(189, 94%, 43%, 1);
+  --snitap-sky-light: hsla(187, 92%, 69%, 1);
+  --snitap-joy-mid: hsla(333, 71%, 51%, 1);
+  --snitap-joy-light: hsla(329, 86%, 70%, 1);
+  --snitap-leaf-mid: hsla(142, 76%, 36%, 1);
+
+  /* Base */
+  --text-color: hsla(0, 0%, 0%, 1);
+  --highlights-color: hsla(0, 0%, 0%, 1);
+  --bg-color: hsla(0, 0%, 98%, 1);
+
+  /* TYPOGRAPHY */
+  --title-font: Syne, sans-serif;
+  --h1: 700 4rem/120% var(--title-font);
+  --h2: 700 2.5/120% var(--title-font);
+
+  --text-font: Montserrat, sans-serif;
+  --button: 500 1rem/150% var(--text-font);
+  --span: 500 .875rem/150% var(--text-font);
+}
