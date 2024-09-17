@@ -232,17 +232,42 @@ nav {
           transform: translateX(400%);
           animation: slideIn 2s 800ms ease both, appear 100ms 800ms both;
         }
-        
+
         &[src*='stars-2'] {
           max-width: 2.5rem;
           right: 0;
           bottom: 35%;
           z-index: 0;
-          
+
           transform: translateX(400%);
           animation: slideIn 2.2s 800ms ease both;
         }
       }
+    }
+  }
+}
+
+#banner {
+  width: 100vw;
+  padding-block: 2.5rem;
+  overflow: hidden;
+
+  & .scroller {
+    background: linear-gradient(90deg, hsla(329, 86%, 70%, 1) 0%, hsla(187, 92%, 69%, 1) 100%);
+    background-size: 400%;
+    background-position: 0 50%;
+
+    width: 100%;
+    padding-block: 1rem;
+    overflow: hidden;
+
+    animation: gradientAnimation 15s ease infinite;
+
+    & .rolling {
+      display: flex;
+      gap: 1.5rem;
+
+      animation: rolling 2s linear infinite;
     }
   }
 }
@@ -329,5 +354,17 @@ nav {
 @keyframes appear {
   to {
     opacity: 1;
+  }
+}
+
+@keyframes rolling {
+  to {
+    transform: translateX(-132px);
+  }
+}
+
+@keyframes gradientAnimation {
+  50% {
+    background-position: 100% 50%;
   }
 }
